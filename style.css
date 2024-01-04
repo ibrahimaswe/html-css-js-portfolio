@@ -169,14 +169,10 @@ section {
   height: 80vh;
 }
 
-.section__pic-container {
-  display: flex;
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-}
+
 
 .section__text {
+ 
   align-self: center;
   text-align: center;
 }
@@ -187,16 +183,36 @@ section {
 
 .section__text__p1 {
   text-align: center;
+  font-size: 2rem;
 }
 
 .section__text__p2 {
-  font-size: 1.75rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.title {
-  font-size: 3rem;
+.title_profile {
+  font-size: 4rem;
   text-align: center;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  will-change: transform; /* Add this line */
+  animation: 
+  typing 2s steps(8),
+  cursor .4s step-end infinite alternate;
+}
+.title {
+  font-size: 4rem;
+  text-align: center;
+}
+/* cursor blinking */
+@keyframes cursor {
+  50% { border-color: transparent }
+}
+/* typing animation */
+@keyframes typing {
+  from { width: 0 }
 }
 
 #socials-container {
