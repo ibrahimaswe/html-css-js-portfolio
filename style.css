@@ -10,7 +10,6 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -177,13 +176,13 @@ section {
   text-align: center;
 }
 
-.section__text p {
-  font-weight: 600;
+.section__text {
+  font-weight: 200;
 }
 
 .section__text__p1 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 .section__text__p2 {
