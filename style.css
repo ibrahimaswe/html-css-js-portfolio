@@ -59,6 +59,7 @@ a:hover {
 
 .logo {
   font-size: 2rem;
+  text-align: center;
 }
 
 .logo:hover {
