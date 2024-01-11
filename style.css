@@ -7,9 +7,26 @@
   padding: 0;
 }
 
+
+
 body {
   font-family: "Poppins", sans-serif;
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
 }
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure the particles are behind other content */
+}
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -191,28 +208,33 @@ section {
   margin-bottom: 1rem;
 }
 
-.title_profile {
-  font-size: 4rem;
+.container1 {
   text-align: center;
-  width: 100%;
+}
+
+.title_profile {
+  display: inline-block;
+  font-size: 4rem;
+  font-weight: bold;
+  width: 9ch;
   white-space: nowrap;
   overflow: hidden;
-  will-change: transform; /* Add this line */
   animation: 
-  typing 2s steps(8),
-  cursor .4s step-end infinite alternate;
+  typing 1.8s steps(10),
+   step-end infinite alternate;
+}
+.title_profile {
+  will-change: transform;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
 }
 .title {
   font-size: 4rem;
   text-align: center;
-}
-/* cursor blinking */
-@keyframes cursor {
-  50% { border-color: transparent }
-}
-/* typing animation */
-@keyframes typing {
-  from { width: 0 }
 }
 
 #socials-container {
