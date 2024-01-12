@@ -128,7 +128,7 @@ a:hover {
   font-size: 1.5rem;
   color: black;
   text-decoration: none;
-  transition: all 0.3 ease-in-out;
+  transition: max-height 0.3s ease-in-out;
 }
 
 .menu-links li {
@@ -155,11 +155,11 @@ a:hover {
   transform: none;
 }
 
-.hamburger-icon span:first-child {
+.hamburger-icon span:nth-child(2) {
   opacity: 1;
 }
 
-.hamburger-icon span:first-child {
+.hamburger-icon span:last-child {
   transform: none;
 }
 
@@ -168,7 +168,7 @@ a:hover {
 section {
   padding-top: 4vh;
   height: 96vh;
-  margin: 0 10rem;
+  margin:2rem;
   box-sizing: border-box;
   min-height: fit-content;
 }
@@ -180,18 +180,14 @@ section {
 /* PROFILE SECTION */
 
 #profile {
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-  height: 80vh;
+  position: relative;
 }
 
 
-
 .section__text {
- 
   align-self: center;
   text-align: center;
+  transform: translateY(50%);
 }
 
 .section__text {
