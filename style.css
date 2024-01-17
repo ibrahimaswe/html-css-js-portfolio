@@ -400,9 +400,11 @@ article .icon {
 
 .project-img {
   border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  width: 300px; /* or any other fixed width */
+  height: 280px; /* or any other fixed height, set this according to the aspect ratio you desire */
+  object-fit: cover;
 }
+
 
 .project-title {
   margin: 1rem;
